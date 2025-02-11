@@ -1344,8 +1344,8 @@ func ausfConfig() error {
 		Configuration: &ausf_factory.Configuration{
 			Sbi: &ausf_factory.Sbi{
 				Scheme:       "http",
-				RegisterIPv4: "127.0.0.9",
-				BindingIPv4:  "127.0.0.9",
+				RegisterIP:   "127.0.0.9",
+				BindingIP:    "127.0.0.9",
 				Port:         8000,
 				Tls: &ausf_factory.Tls{
 					Pem: "cert/ausf.pem",
