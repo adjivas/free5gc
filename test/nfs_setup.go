@@ -317,8 +317,8 @@ func amfConfig(testID TestId) error {
 			NgapPort:   38412,
 			Sbi: &amf_factory.Sbi{
 				Scheme:       "http",
-				RegisterIPv4: "127.0.0.18",
-				BindingIPv4:  "127.0.0.18",
+				RegisterIPv4: "2001:db8::1:0:0:18",
+				BindingIPv4:  "2001:db8::1:0:0:18",
 				Port:         8000,
 				Tls: &amf_factory.Tls{
 					Pem: "cert/amf.pem",
@@ -815,8 +815,10 @@ func udmConfig() error {
 			},
 			Sbi: &udm_factory.Sbi{
 				Scheme:       "http",
-				RegisterIPv4: "127.0.0.3",
-				BindingIPv4:  "127.0.0.3",
+				// RegisterIPv4: "127.0.0.3",
+				// BindingIPv4:  "127.0.0.3",
+				RegisterIPv4: "2001:db8::1:0:0:3",
+				BindingIPv4:  "2001:db8::1:0:0:3",
 				Port:         8000,
 				Tls: &udm_factory.Tls{
 					Pem: "cert/udm.pem",
@@ -1350,8 +1352,10 @@ func ausfConfig() error {
 		Configuration: &ausf_factory.Configuration{
 			Sbi: &ausf_factory.Sbi{
 				Scheme:       "http",
-				RegisterIPv4: "127.0.0.9",
-				BindingIPv4:  "127.0.0.9",
+				RegisterIPv4: "2001:db8::1:0:0:9",
+				BindingIPv4:  "2001:db8::1:0:0:9",
+//				RegisterIPv4: "127.0.0.9",
+//				BindingIPv4:  "127.0.0.9",
 				Port:         8000,
 				Tls: &ausf_factory.Tls{
 					Pem: "cert/ausf.pem",
