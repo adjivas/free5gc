@@ -35,7 +35,8 @@ func TestULCLAndMultiUPF(t *testing.T) {
 
 func testULCLSessionBase(t *testing.T, ueCount int, upfNum int) {
 	ranN2Ipv4Addr := "127.0.0.1"
-	amfN2Ipv4Addr := "127.0.0.18"
+	// amfN2Ipv4Addr := "127.0.0.18"
+	amfN2Ipv4Addr := "2001:db8::1:0:0:18"
 	ranN3Ipv4Addr := "10.200.200.1"
 
 	var n int
